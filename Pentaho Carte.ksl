@@ -1,0 +1,11 @@
+      <slaveserver>
+        <name>Pentaho Carte</name>
+        <hostname>http&#x3a;&#x2f;&#x2f;10.10.99.8</hostname>
+        <port>8080</port>
+        <webAppName>Carte</webAppName>
+        <username>jurisrr</username>
+<password>Encrypted 6acaecdff24588c3d4e548fe3e87cbe182</password>        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>      </slaveserver>

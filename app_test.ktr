@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>app_test</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017/09/11 13:02:13.385</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2017/09/11 13:02:13.385</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>PL MAIN</name>
+    <server>146.148.18.192</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>poland_prod</database>
+    <port>5432</port>
+    <username>maciej</username>
+    <password>Encrypted 5831346d5434776f6b7367756b747464d8d0e6be58c085d39c00bd65ee9fa7ea</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PL REPORTING</name>
+    <server>10.10.99.8</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>tanikredyt</database>
+    <port>5432</port>
+    <username>maciej</username>
+    <password>Encrypted 2be98afc86aa7f2aebe0f877adf81a78f</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>extract application info from slave</from>
+      <to>sort on app id</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / Case</from>
+      <to>income from app_atr</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / Case</from>
+      <to>Switch / Case 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>income from app_atr</from>
+      <to>Switch / Case 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / Case 2</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / Case 2</from>
+      <to>income from fin db (file previously)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>income from fin db (file previously)</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>sort on app id</from>
+      <to>Multiway Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>sort on app id 2</from>
+      <to>Multiway Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Multiway Merge Join</from>
+      <to>Switch / Case</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (do nothing)</from>
+      <to>push to application_main table</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2nd income source</from>
+      <to>sort on app id 2</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>2nd income source</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PL REPORTING</connection>
+    <sql>SELECT * from application_income_supplement</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Multiway Merge Join</name>
+    <type>MultiwayMergeJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>FULL OUTER</join_type>
+    <step0>sort on app id</step0>
+    <step1>sort on app id 2</step1>
+    <number_input>2</number_input>
+    <keys>
+      <key>application_id</key>
+      <key>application_id</key>
+    </keys>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Switch / Case</name>
+    <type>SwitchCase</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fieldname>income</fieldname>
+    <use_contains>N</use_contains>
+    <case_value_type>String</case_value_type>
+    <case_value_format />
+    <case_value_decimal />
+    <case_value_group />
+    <default_target_step>Switch / Case 2</default_target_step>
+    <cases>
+      <case>
+        <value />
+        <target_step>income from app_atr</target_step>
+      </case>
+    </cases>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Switch / Case 2</name>
+    <type>SwitchCase</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fieldname>income</fieldname>
+    <use_contains>N</use_contains>
+    <case_value_type>String</case_value_type>
+    <case_value_format />
+    <case_value_decimal />
+    <case_value_group />
+    <default_target_step>Dummy (do nothing)</default_target_step>
+    <cases>
+      <case>
+        <value />
+        <target_step>income from fin db (file previously)</target_step>
+      </case>
+    </cases>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>extract application info from slave</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PL MAIN</connection>
+    <sql>
+
+with app_ranks as (SELECT a.id, seq_application_total, seq_application_confirm as confirmed_rank, seq_application_reject as rejected_rank
+,case when seq_application_reject > 0 then seq_application_reject else seq_application_total- seq_application_confirm end as seq_application_reject
+,case when seq_application_confirm > 0 then seq_application_confirm else seq_application_total- seq_application_reject end as seq_application_confirm
+,seq_application_per_loan
+  FROM lending.loan_application a join (select id, rank() over (partition by client_id 
+  order by client_id ASC, id ASC ) as seq_application_total  from lending.loan_application )aa 
+  on a.id = aa.id
+
+  left outer join (select id, rank() over (partition by client_id 
+  order by client_id ASC, id ASC ) as seq_application_confirm from lending.loan_application
+  where status = 'APPROVED')ac 
+  on a.id = ac.id
+
+  left outer join (select id, rank() over (partition by client_id 
+  order by client_id ASC, id ASC ) as seq_application_reject from lending.loan_application 
+  where status = 'REJECTED')ar 
+  on a.id = ar.id
+
+  left outer join (select id, rank() over (partition by client_id, loans_paid
+  order by client_id ASC, loans_paid ASC, id ASC ) as seq_application_per_loan from lending.loan_application 
+  )aspl 
+  on (a.id = aspl.id)
+  
+  order by id, a.id) 
+
+
+
+SELECT 
+distinct 
+la.id as application_id
+,case when la.application_date::date &lt; '2017-06-10' then la.application_date else la.created_at end as application_datetime 
+,extract(week from la.application_date) as app_iso_week
+--,la.application_date::date
+--,to_char(la.application_date, 'day') as app_day
+
+, la.client_id
+, la.requested_principal as application_amount
+, la.offered_principal as offered_amount
+, la.status
+, la.close_reason
+/*, sstest.scoring as score1
+, sstest1.scoring as score_alternative1
+, case when (sstest.split_run_selected_result =TRUE) then 'main_score' else 'alternative' end as score_type1
+*/
+, ss.scoring as score
+, sss.scoring as score_alternative
+, case 
+when sss.split_run_selected_result = TRUE then 'alternative' 
+when sss.split_run_selected_result= false then 'main_score' end as score_type -- NEW SCORECARDS
+, inc.income as income1
+, income_app_atr
+, la.loans_paid as finished_loan_cnt
+, la.loan_id
+--, substring(l.loan_number from '..$')::numeric loan_seq
+, l.status as loan_status
+, la.offered_period_count
+,la.requested_period_count
+, l.principal_disbursed
+, l.interest_applied
+, case when l.extensions> 0 then 1 else 0 end as prolongated
+, case when cms_landing_page_id is null then lp.id else cms_landing_page_id end as landing_page
+--,cms_landing_page_id as landing_page_migrated
+, case when pi.gender = 'MALE' then 1 else 2 end as gender
+, extract( years from age(la.application_date, pi.date_of_birth)) as age --###   extract(years from age(pi.date_of_birth)) as age
+--, div(extract(years from age(pi.date_of_birth))::int-1,5)*5+1 ||'-'|| div(extract(years from age(pi.date_of_birth))::int-1,5)*5+5 as age_group
+--, 'poland' as country
+, case when la.loans_paid = 0 then 0 else 1 end as app_type
+
+, seq_application_total
+, seq_application_confirm
+, seq_application_reject
+, rejected_rank
+, confirmed_rank
+, seq_application_per_loan
+
+, l.issue_date::date as loan_date
+
+, current_timestamp as extraction_datetime
+
+
+, mt.browser
+, substring(split_part(mt.geo_location, ',', 1),8,100) as application_latitude
+, trim(both '}' from substring(split_part(mt.geo_location, ',', 2),8,100)) as application_longtitude
+
+
+, mt.os
+, mt.device
+
+, (SELECT prev_dpd from (SELECT  COALESCE((SELECT (close_date::date - maturity_date::Date)
+       FROM lending.loan ll
+       WHERE ll.client_id=la.client_id and ll.issue_date::Date&lt;la.application_date::date
+       ORDER BY created_at DESC
+       LIMIT 1), 0)as prev_dpd)pdpd) as prev_dpd
+
+, (SELECT prev_loan from (SELECT  COALESCE((SELECT principal_disbursed
+       FROM lending.loan ll
+       WHERE ll.client_id=la.client_id and ll.issue_date::Date&lt;la.application_date::date
+       ORDER BY created_at DESC
+       LIMIT 1), 0)as prev_loan)pdpd) as prev_loan
+
+
+, case when fp.amount_paid >= 0.01 then 1 else 0 end as id_payment
+
+,case when fp.created_at::date > '2017-06-09' then fp.created_at else fp.post_date end as identification_datetime
+
+
+
+
+
+--################### end of selected data ################################################
+ from lending.loan_application la 
+join lending.loan_application lla on (la.id = lla.id)
+
+
+left outer join 
+
+(select 
+
+	workflow_id, number_value as app_id from workflow.workflow_param 
+	where name = 'loanApplicationId')app on (app.app_id = la.id)
+	
+left outer join 
+
+(select 
+
+	workflow_id, text_value as resolution from workflow.workflow_param 
+	where name = 'Resolution')app2 on (app.workflow_id = app2.workflow_id)
+
+left outer join crm.personal_info pi on (la.client_id = pi.client_id)
+left outer join crm.email_login el on (la.client_id = el.client_id)
+
+left outer join (SELECT 
+
+	*
+
+  FROM 
+	(SELECT v.client_id, e.utm_source, e.utm_campaign, e.referrer_domain, e.created_at::Date as event_date,
+	e.browser, e.geo_location, e.os, e.device, e.screen_size, la.id
+	,rank() over (partition by la.id order by e.created_at) as rrow 
+	from marketing_tracking.event e
+
+  join marketing_tracking.visitor v on (v.id = e.visitor_id) join 
+  --(select min(e.id) as first_event_id, v.client_id from marketing_tracking.event e join marketing_tracking.visitor v on (v.id = e.visitor_id)  group by v.client_id) fe on (v.client_id = fe.client_id)
+
+	lending.loan_application la on (la.client_id = v.client_id and e.created_at::Date = la.application_date::Date))aa
+
+  where rrow=1)mt on (mt.id = la.id)
+
+
+left outer join (select distinct application_id, name as traffic_source, lp.id from marketing_landing.event e join marketing_landing.landing_page lp on (e.landing_page_id=lp.id))lp on la.id = lp.application_id
+
+join app_ranks apr on (apr.id = la.id)
+
+left outer join lending.loan l on (l.loan_application_id = la.id)	
+
+--OLD SCORING
+--left outer join (select distinct loan_application_id, scoring, e.id as score_id from scoring.scorecard_evaluation e join scoring.scorecard s on (e.scorecard_id =  s.id and s.name like 'CREDIT_BUREAU%'))ss 
+--	on ss.loan_application_id=la.id
+
+--new scoring begins
+
+left outer join (select * from (select distinct loan_application_id, scoring, e.id as score_id, split_run_selected_result, rank() over (partition by loan_application_id  order by e.id DESC ) as seq_score
+from scoring.scorecard_evaluation e
+       join scoring.scorecard s on (e.scorecard_id =  s.id and s.name in ('CREDIT_BUREAU_SCORECARD_0','CREDIT_BUREAU_SCORECARD_1','CREDIT_BUREAU_SCORECARD_2','CREDIT_BUREAU_SCORECARD_3+'))
+)aa where seq_score=1)ss
+       on ss.loan_application_id=la.id
+ 
+left outer join (select * from (select distinct loan_application_id, scoring, e.id as score_id, split_run_selected_result, rank() over (partition by loan_application_id  order by e.id DESC ) as seq_score
+from scoring.scorecard_evaluation e
+       join scoring.scorecard s on (e.scorecard_id =  s.id and s.name in ('CREDIT_BUREAU_SCORECARD_0a','CREDIT_BUREAU_SCORECARD_1a','CREDIT_BUREAU_SCORECARD_2a','CREDIT_BUREAU_SCORECARD_3+a')))aa where seq_score=1)sss
+       on sss.loan_application_id=la.id
+
+-- left outer join (select distinct loan_application_id, scoring, e.id as score_id, split_run_selected_result from scoring.scorecard_evaluation e
+ --     join scoring.scorecard s on (e.scorecard_id =  s.id and s.name in ('CREDIT_BUREAU_SCORECARD_0','CREDIT_BUREAU_SCORECARD_1','CREDIT_BUREAU_SCORECARD_2','CREDIT_BUREAU_SCORECARD_3+')))ss
+     --  on ss.loan_application_id=la.id
+ 
+--left outer join (select distinct loan_application_id, scoring, e.id as score_id, split_run_selected_result from scoring.scorecard_evaluation e
+   --    join scoring.scorecard s on (e.scorecard_id =  s.id and s.name in ('CREDIT_BUREAU_SCORECARD_0a','CREDIT_BUREAU_SCORECARD_1a','CREDIT_BUREAU_SCORECARD_2a','CREDIT_BUREAU_SCORECARD_3+a')))sss
+     --on sss.loan_application_id=la.id
+
+
+--TEST 
+	left outer join (select distinct loan_application_id, scoring, e.id as score_id, split_run_selected_result from scoring.scorecard_evaluation e
+       join scoring.scorecard s on (e.scorecard_id =  s.id and (split_run_selected_result= TRUE or split_run_selected_result is NULL)) and s.name in ('CREDIT_BUREAU_SCORECARD_0','CREDIT_BUREAU_SCORECARD_1','CREDIT_BUREAU_SCORECARD_2','CREDIT_BUREAU_SCORECARD_3+'))
+       sstest
+       on sstest.loan_application_id=la.id
+	left outer join (select distinct loan_application_id, scoring, e.id as score_id, split_run_selected_result from scoring.scorecard_evaluation e
+       join scoring.scorecard s on (e.scorecard_id =  s.id and split_run_selected_result=FALSE and s.name in ('CREDIT_BUREAU_SCORECARD_0a','CREDIT_BUREAU_SCORECARD_1a','CREDIT_BUREAU_SCORECARD_2a','CREDIT_BUREAU_SCORECARD_3+a')))sstest1
+       on sstest1.loan_application_id=la.id
+
+
+--new scoring end
+
+--INCOME JOINS
+left join (select application_id as id, value as income_app_atr from lending.loan_application_attribute where key='monthlyIncome')lapinc
+on (lapinc.id=la.id)
+
+left outer join (SELECT distinct client_id,  max(json_value::json ->>'monthlyIncome' )as income
+  FROM crm.client_attribute group by 1 )inc on (la.client_id = inc.client_id)
+
+
+--INCOME END
+left outer join (select  client_id, max(fee_paid) as amount_paid, max(created_at) as created_at,  max(post_date) as post_date  
+from  
+transaction.transaction t 
+	where 1=1 and transaction_type =  'FEE_PAYMENT' 
+	and t.transaction_sub_type = 'REGISTRATION_FEE'
+	group by client_id )fp
+	on (fp.client_id = la.client_id)
+
+left outer join (select k.*,rank() over (partition by loan_application_id  order by created_at DESC) as rank
+ from poland_krd.response k)krd on (krd.loan_application_id=la.id and krd.rank = 1) -- need to select the latest!!
+
+left outer join (select e.*,rank() over (partition by loan_application_id  order by created_at DESC) as rank
+ from poland_eucb.response e)eucb on (eucb.loan_application_id=la.id and eucb.rank = 1)
+ left join migration_source.r_client migration_client on la.client_id=migration_client.r_client_id
+
+--select * from scoring.scorecard_evaluation where loan_application_id = '241516'
+--select * from scoring.scorecard_evaluation where loan_application_id='241525'
+
+--select distinct s.name from scoring.scorecard s
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>464</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>income from app_atr</name>
+    <type>SetValueField</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>income</name>
+        <replaceby>income_app_atr</replaceby>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>656</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>income from fin db (file previously)</name>
+    <type>SetValueField</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>income</name>
+        <replaceby>income1</replaceby>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>push to application_main table</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PL REPORTING</connection>
+    <schema />
+    <table>application_main</table>
+    <commit>5000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>application_id</column_name>
+        <stream_name>application_id</stream_name>
+      </field>
+      <field>
+        <column_name>application_datetime</column_name>
+        <stream_name>application_datetime</stream_name>
+      </field>
+      <field>
+        <column_name>app_iso_week</column_name>
+        <stream_name>app_iso_week</stream_name>
+      </field>
+      <field>
+        <column_name>client_id</column_name>
+        <stream_name>client_id</stream_name>
+      </field>
+      <field>
+        <column_name>application_amount</column_name>
+        <stream_name>application_amount</stream_name>
+      </field>
+      <field>
+        <column_name>offered_amount</column_name>
+        <stream_name>offered_amount</stream_name>
+      </field>
+      <field>
+        <column_name>status</column_name>
+        <stream_name>status</stream_name>
+      </field>
+      <field>
+        <column_name>close_reason</column_name>
+        <stream_name>close_reason</stream_name>
+      </field>
+      <field>
+        <column_name>score</column_name>
+        <stream_name>score</stream_name>
+      </field>
+      <field>
+        <column_name>score_alternative</column_name>
+        <stream_name>score_alternative</stream_name>
+      </field>
+      <field>
+        <column_name>score_type</column_name>
+        <stream_name>score_type</stream_name>
+      </field>
+      <field>
+        <column_name>finished_loan_cnt</column_name>
+        <stream_name>finished_loan_cnt</stream_name>
+      </field>
+      <field>
+        <column_name>loan_id</column_name>
+        <stream_name>loan_id</stream_name>
+      </field>
+      <field>
+        <column_name>loan_status</column_name>
+        <stream_name>loan_status</stream_name>
+      </field>
+      <field>
+        <column_name>offered_period_count</column_name>
+        <stream_name>offered_period_count</stream_name>
+      </field>
+      <field>
+        <column_name>principal_disbursed</column_name>
+        <stream_name>principal_disbursed</stream_name>
+      </field>
+      <field>
+        <column_name>interest_applied</column_name>
+        <stream_name>interest_applied</stream_name>
+      </field>
+      <field>
+        <column_name>prolongated</column_name>
+        <stream_name>prolongated</stream_name>
+      </field>
+      <field>
+        <column_name>landing_page</column_name>
+        <stream_name>landing_page</stream_name>
+      </field>
+      <field>
+        <column_name>gender</column_name>
+        <stream_name>gender</stream_name>
+      </field>
+      <field>
+        <column_name>age</column_name>
+        <stream_name>age</stream_name>
+      </field>
+      <field>
+        <column_name>app_type</column_name>
+        <stream_name>app_type</stream_name>
+      </field>
+      <field>
+        <column_name>seq_application_total</column_name>
+        <stream_name>seq_application_total</stream_name>
+      </field>
+      <field>
+        <column_name>seq_application_confirm</column_name>
+        <stream_name>seq_application_confirm</stream_name>
+      </field>
+      <field>
+        <column_name>seq_application_reject</column_name>
+        <stream_name>seq_application_reject</stream_name>
+      </field>
+      <field>
+        <column_name>rejected_rank</column_name>
+        <stream_name>rejected_rank</stream_name>
+      </field>
+      <field>
+        <column_name>confirmed_rank</column_name>
+        <stream_name>confirmed_rank</stream_name>
+      </field>
+      <field>
+        <column_name>seq_application_per_loan</column_name>
+        <stream_name>seq_application_per_loan</stream_name>
+      </field>
+      <field>
+        <column_name>loan_date</column_name>
+        <stream_name>loan_date</stream_name>
+      </field>
+      <field>
+        <column_name>extraction_datetime</column_name>
+        <stream_name>extraction_datetime</stream_name>
+      </field>
+      <field>
+        <column_name>browser</column_name>
+        <stream_name>browser</stream_name>
+      </field>
+      <field>
+        <column_name>application_latitude</column_name>
+        <stream_name>application_latitude</stream_name>
+      </field>
+      <field>
+        <column_name>application_longtitude</column_name>
+        <stream_name>application_longtitude</stream_name>
+      </field>
+      <field>
+        <column_name>os</column_name>
+        <stream_name>os</stream_name>
+      </field>
+      <field>
+        <column_name>device</column_name>
+        <stream_name>device</stream_name>
+      </field>
+      <field>
+        <column_name>prev_dpd</column_name>
+        <stream_name>prev_dpd</stream_name>
+      </field>
+      <field>
+        <column_name>prev_loan</column_name>
+        <stream_name>prev_loan</stream_name>
+      </field>
+      <field>
+        <column_name>id_payment</column_name>
+        <stream_name>id_payment</stream_name>
+      </field>
+      <field>
+        <column_name>identification_datetime</column_name>
+        <stream_name>identification_datetime</stream_name>
+      </field>
+      <field>
+        <column_name>income</column_name>
+        <stream_name>income</stream_name>
+      </field>
+      <field>
+        <column_name>requested_period_count</column_name>
+        <stream_name>requested_period_count</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>656</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>sort on app id</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>application_id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>464</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>sort on app id 2</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>application_id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

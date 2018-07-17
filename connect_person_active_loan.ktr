@@ -1,0 +1,894 @@
+<transformation>
+  <info>
+    <name>connect_person_active_loan</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2017&#x2f;01&#x2f;02 10&#x3a;11&#x3a;56.019</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2017&#x2f;01&#x2f;02 11&#x3a;13&#x3a;26.249</modified_date>
+    <key_for_session_key/>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>Poland</name>
+    <server>178.62.169.231</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>tani_db_pl</database>
+    <port>5432</port>
+    <username>tani_pl_ro</username>
+    <password>Encrypted 34597245f0ebd6bb32e9828afc1f865ae981bae2</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>applications_rejected_connect_person</from><to>Switch &#x2f; Case</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>lastname_name</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>lastname_address</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>phone</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>decl_address</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>fact_address</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>ip</to><enabled>Y</enabled> </hop>
+  <hop> <from>lastname_name</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>Dummy &#x28;do nothing&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>lastname_address</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>phone</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>decl_address</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>fact_address</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>ip</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Switch &#x2f; Case</name>
+    <type>SwitchCase</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<fieldname>compare_reason</fieldname>
+<use_contains>N</use_contains>
+<case_value_type>String</case_value_type>
+<case_value_format/>
+<case_value_decimal/>
+<case_value_group/>
+<default_target_step>Dummy &#x28;do nothing&#x29;</default_target_step>
+<cases><case><value>lastname_name</value>
+<target_step>lastname_name</target_step>
+</case><case><value>lastname_address</value>
+<target_step>lastname_address</target_step>
+</case><case><value>phone</value>
+<target_step>phone</target_step>
+</case><case><value>decl_address</value>
+<target_step>decl_address</target_step>
+</case><case><value>fact_address</value>
+<target_step>fact_address</target_step>
+</case><case><value>ip</value>
+<target_step>ip</target_step>
+</case></cases>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>288</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>applications_rejected_connect_person</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <sql>SELECT &#xd;&#xa;a.r_application_id, a.app_date&#x3a;&#x3a;date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as city_act, aa.street as street_act, aa.house as house_act,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name, c.mobile, c.workplace_phone, c.contact_person_phone&#xd;&#xa;, case when manual_aproove_reason like &#x27;&#x25;COMPARE_NAME&#x25;&#x27; then &#x27;lastname_name&#x27;&#xd;&#xa; when manual_aproove_reason like &#x27;&#x25;COMPARE_SURNAME_ADDRESS&#x25;&#x27; then &#x27;lastname_address&#x27;&#xd;&#xa; when manual_aproove_reason like &#x27;&#x25;COMPARE_PHONES&#x25;&#x27; then &#x27;phone&#x27; &#xd;&#xa; when manual_aproove_reason like &#x27;&#x25;COMPARE_DECL_ADDR&#x25;&#x27; then &#x27;decl_address&#x27; &#xd;&#xa; when manual_aproove_reason like &#x27;&#x25;COMPARE_FACT_ADDR&#x25;&#x27; then &#x27;fact_address&#x27; &#xd;&#xa; when manual_aproove_reason like &#x27;&#x25;COMPARE_IP&#x25;&#x27; then &#x27;ip&#x27; &#xd;&#xa;	else null end as compare_reason&#xd;&#xa;,manual_aproove_reason&#xd;&#xa;&#xd;&#xa;  FROM r_application a join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;&#xd;&#xa;  where reject_reason &#x3d; &#x27;Connect person active loan&#x27;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>112</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>lastname_address</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select l.r_loan_id, l.status, l.loan_date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as act_city, aa.street as act_street, aa.house as act_house,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name,c.mobile&#xd;&#xa;&#xd;&#xa;from r_loan l join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;where 1&#x3d;1&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;and c.last_name &#x3d; &#x3f;&#xd;&#xa;and aa.city &#x3d; &#x3f;&#xd;&#xa;and aa.street &#x3d; &#x3f;&#xd;&#xa;and c.r_client_id &#x3c;&#x3e; &#x3f;&#xd;&#xa;and l.loan_date&#x3a;&#x3a;date &#x3c; &#x3f;</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>last_name</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>city_act</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>street_act</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>phone</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select l.r_loan_id, l.status, l.loan_date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as act_city, aa.street as act_street, aa.house as act_house,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name ,c.mobile&#xd;&#xa;&#xd;&#xa;from r_loan l join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;where 1&#x3d;1&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;and &#x28;c.mobile &#x3d; &#x3f;&#xd;&#xa;or c.mobile &#x3d; &#x3f;&#xd;&#xa;or c.mobile &#x3d; &#x3f;&#x29;&#xd;&#xa;and c.r_client_id &#x3c;&#x3e; &#x3f;&#xd;&#xa;and l.loan_date&#x3a;&#x3a;date &#x3c; &#x3f;&#xd;&#xa;</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>mobile</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>workplace_phone</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>contact_person_phone</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>decl_address</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select l.r_loan_id, l.status, l.loan_date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as act_city, aa.street as act_street, aa.house as act_house,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name ,c.mobile&#xd;&#xa;&#xd;&#xa;from r_loan l join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;where 1&#x3d;1&#xd;&#xa;&#xd;&#xa;and ad.city &#x3d; &#x3f;&#xd;&#xa;and ad.street &#x3d; &#x3f;&#xd;&#xa;and ad.house &#x3d; &#x3f;&#xd;&#xa;and c.r_client_id &#x3c;&#x3e; &#x3f;&#xd;&#xa;and l.loan_date&#x3a;&#x3a;date &#x3c; &#x3f;</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>city</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>street</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>house</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>fact_address</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select l.r_loan_id, l.status, l.loan_date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as act_city, aa.street as act_street, aa.house as act_house,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name ,c.mobile&#xd;&#xa;&#xd;&#xa;from r_loan l join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;where 1&#x3d;1&#xd;&#xa;&#xd;&#xa;and aa.city &#x3d; &#x3f;&#xd;&#xa;and aa.street &#x3d; &#x3f;&#xd;&#xa;and aa.house &#x3d; &#x3f;&#xd;&#xa;and c.r_client_id &#x3c;&#x3e; &#x3f;&#xd;&#xa;and l.loan_date&#x3a;&#x3a;date &#x3c; &#x3f;</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>city_act</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>street_act</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>house_act</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>lastname_name</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select l.r_loan_id, l.status, l.loan_date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as act_city, aa.street as act_street, aa.house as act_house,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name,c.mobile&#xd;&#xa;&#xd;&#xa;from r_loan l join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;where 1&#x3d;1&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;and c.first_name &#x3d; &#x3f;&#xd;&#xa;and c.last_name &#x3d; &#x3f;&#xd;&#xa;and c.r_client_id &#x3c;&#x3e; &#x3f;&#xd;&#xa;and l.loan_date&#x3a;&#x3a;date &#x3c; &#x3f;</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>first_name</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>last_name</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ip</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Poland</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select l.r_loan_id, l.status, l.loan_date, c.r_client_id, &#xd;&#xa;ad.city, ad.street, ad.house,&#xd;&#xa;aa.city as act_city, aa.street as act_street, aa.house as act_house,&#xd;&#xa;c.reg_ip_address,&#xd;&#xa;c.first_name, c.last_name ,c.mobile&#xd;&#xa;&#xd;&#xa;from r_loan l join r_client c using &#x28;r_client_id&#x29; join r_client_address ad on &#x28;c.decl_client_address_id &#x3d; ad.r_client_address_id&#x29;&#xd;&#xa;left outer join r_client_address aa on &#x28;c.act_client_address_id &#x3d; aa.r_client_address_id&#x29;&#xd;&#xa;where 1&#x3d;1&#xd;&#xa;&#xd;&#xa;and c.reg_ip_address &#x3d; &#x3f;&#xd;&#xa;and c.r_client_id &#x3c;&#x3e; &#x3f;&#xd;&#xa;and l.loan_date&#x3a;&#x3a;date &#x3c; &#x3f;</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>reg_ip_address</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>None</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>,</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C&#x3a;&#x5c;Users&#x5c;Juris Riesksts-Rieks&#x5c;Documents&#x5c;data extracts&#x5c;connect_person_active_loan</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>r_application_id</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>app_date</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>r_client_id</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>city</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>street</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>house</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>city_act</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>street_act</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>house_act</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>reg_ip_address</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>first_name</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>last_name</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>mobile</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>workplace_phone</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>contact_person_phone</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>compare_reason</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>r_loan_id</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>status</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>loan_date</name>
+        <type>Timestamp</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>r_client_id_1</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>city_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>street_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>house_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>act_city</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>act_street</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>act_house</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>reg_ip_address_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>first_name_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>last_name_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>mobile_1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>manual_aproove_reason</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>608</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>272</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>
